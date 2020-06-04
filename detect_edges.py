@@ -2,6 +2,9 @@ import numpy as np
 import cv2
 from matplotlib import pyplot as plt
 
+# to: https://medium.com/analytics-vidhya/corner-detection-using-opencv-13998a679f76
+# rozszerzone na dwa obrazki
+
 def get_points_from_2d(cam_id):
     img = cv2.imread(f'img/box_clean_{cam_id}.jpg')
     gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
